@@ -1,0 +1,220 @@
+#include <cinttypes>
+#include <cstddef>
+#include <cstdint>
+#include <cstdlib>
+#include <cstring>
+#include <errno.h>
+#include <fcntl.h>
+#include <iostream>
+#include <string>
+#include <termios.h>
+#include <unistd.h>
+
+#define START_BYTE 0xAA
+#define END_BYTE 0xBB
+
+#pragma pack(push, 1)
+struct CommunicationData {
+  uint8_t start_byte;
+
+  // Twist For Base
+  uint8_t x;
+  uint8_t y;
+  uint8_t omega;
+
+  // Vector For Shooter
+  uint8_t ax;
+  uint8_t ay;
+  uint8_t az;
+
+  // Position of Catcher
+  uint8_t on_off;
+  uint8_t theta;
+  uint8_t zz;
+
+  // end byte and crc
+  uint8_t end_byte;
+  uint8_t crc;
+};
+#pragma pack(pop)
+
+void print_this(CommunicationData cd) {
+  std::cout << "####COMMUNICATIONDATA####" << std::endl
+            << "x:\t" << (int)cd.x << std::endl
+            << "y:\t" << (int)cd.y << std::endl
+            << "omega:\t" << (int)cd.omega << std::endl
+            << "ax:\t" << (int)cd.ax << std::endl
+            << "ay:\t" << (int)cd.ay << std::endl
+            << "az:\t" << (int)cd.az << std::endl
+            << "on_off:\t" << (int)cd.on_off << std::endl
+            << "theta:\t" << (int)cd.theta << std::endl
+            << "zz:\t" << (int)cd.zz << std::endl;
+}
+
+const uint8_t crc8x_table[256] = {
+    0x00, 0x31, 0x62, 0x53, 0xC4, 0xF5, 0xA6, 0x97, 0xB9, 0x88, 0xDB, 0xEA,
+    0x7D, 0x4C, 0x1F, 0x2E, 0x43, 0x72, 0x21, 0x10, 0x87, 0xB6, 0xE5, 0xD4,
+    0xFA, 0xCB, 0x98, 0xA9, 0x3E, 0x0F, 0x5C, 0x6D, 0x86, 0xB7, 0xE4, 0xD5,
+    0x42, 0x73, 0x20, 0x11, 0x3F, 0x0E, 0x5D, 0x6C, 0xFB, 0xCA, 0x99, 0xA8,
+    0xC5, 0xF4, 0xA7, 0x96, 0x01, 0x30, 0x63, 0x52, 0x7C, 0x4D, 0x1E, 0x2F,
+    0xB8, 0x89, 0xDA, 0xEB, 0x3D, 0x0C, 0x5F, 0x6E, 0xF9, 0xC8, 0x9B, 0xAA,
+    0x84, 0xB5, 0xE6, 0xD7, 0x40, 0x71, 0x22, 0x13, 0x7E, 0x4F, 0x1C, 0x2D,
+    0xBA, 0x8B, 0xD8, 0xE9, 0xC7, 0xF6, 0xA5, 0x94, 0x03, 0x32, 0x61, 0x50,
+    0xBB, 0x8A, 0xD9, 0xE8, 0x7F, 0x4E, 0x1D, 0x2C, 0x02, 0x33, 0x60, 0x51,
+    0xC6, 0xF7, 0xA4, 0x95, 0xF8, 0xC9, 0x9A, 0xAB, 0x3C, 0x0D, 0x5E, 0x6F,
+    0x41, 0x70, 0x23, 0x12, 0x85, 0xB4, 0xE7, 0xD6, 0x7A, 0x4B, 0x18, 0x29,
+    0xBE, 0x8F, 0xDC, 0xED, 0xC3, 0xF2, 0xA1, 0x90, 0x07, 0x36, 0x65, 0x54,
+    0x39, 0x08, 0x5B, 0x6A, 0xFD, 0xCC, 0x9F, 0xAE, 0x80, 0xB1, 0xE2, 0xD3,
+    0x44, 0x75, 0x26, 0x17, 0xFC, 0xCD, 0x9E, 0xAF, 0x38, 0x09, 0x5A, 0x6B,
+    0x45, 0x74, 0x27, 0x16, 0x81, 0xB0, 0xE3, 0xD2, 0xBF, 0x8E, 0xDD, 0xEC,
+    0x7B, 0x4A, 0x19, 0x28, 0x06, 0x37, 0x64, 0x55, 0xC2, 0xF3, 0xA0, 0x91,
+    0x47, 0x76, 0x25, 0x14, 0x83, 0xB2, 0xE1, 0xD0, 0xFE, 0xCF, 0x9C, 0xAD,
+    0x3A, 0x0B, 0x58, 0x69, 0x04, 0x35, 0x66, 0x57, 0xC0, 0xF1, 0xA2, 0x93,
+    0xBD, 0x8C, 0xDF, 0xEE, 0x79, 0x48, 0x1B, 0x2A, 0xC1, 0xF0, 0xA3, 0x92,
+    0x05, 0x34, 0x67, 0x56, 0x78, 0x49, 0x1A, 0x2B, 0xBC, 0x8D, 0xDE, 0xEF,
+    0x82, 0xB3, 0xE0, 0xD1, 0x46, 0x77, 0x24, 0x15, 0x3B, 0x0A, 0x59, 0x68,
+    0xFF, 0xCE, 0x9D, 0xAC};
+
+uint8_t calculate_cr8x_fast(uint8_t *data, size_t len) {
+  uint8_t crc = 0xFF; // init value
+  for (size_t i = 0; i < len; i++) {
+    crc = crc8x_table[data[i] ^ crc];
+  }
+  return crc;
+}
+
+class SerialBridge {
+public:
+  CommunicationData standard;
+  uint8_t start_byte_search;
+
+  int file_description;
+
+  int open_serial_port(char *portname) {
+    int fd = open(portname, O_RDWR | O_NOCTTY | O_SYNC);
+
+    if (fd < 0) {
+      std::cerr << "[ERROR]"
+                << "Error Opening " << portname << std::endl;
+
+      exit(1);
+    }
+
+    return fd;
+  }
+
+  // Function to configure the serial port
+  bool configureSerialPort(int fd, int speed) {
+    struct termios tty;
+    if (tcgetattr(fd, &tty) != 0) {
+      std::cerr << "Error from tcgetattr: " << strerror(errno) << std::endl;
+      return false;
+    }
+
+    cfsetospeed(&tty, speed);
+    cfsetispeed(&tty, speed);
+
+    tty.c_cflag = (tty.c_cflag & ~CSIZE) | CS8; // 8-bit characters
+    tty.c_iflag &= ~IGNBRK;                     // disable break processing
+    tty.c_lflag = 0;     // no signaling chars, no echo, no
+                         // canonical processing
+    tty.c_oflag = 0;     // no remapping, no delays
+    tty.c_cc[VMIN] = 0;  // read doesn't block
+    tty.c_cc[VTIME] = 5; // 0.5 seconds read timeout
+
+    tty.c_iflag &= ~(IXON | IXOFF | IXANY); // shut off xon/xoff ctrl
+
+    tty.c_cflag |= (CLOCAL | CREAD);   // ignore modem controls,
+                                       // enable reading
+    tty.c_cflag &= ~(PARENB | PARODD); // shut off parity
+    tty.c_cflag &= ~CSTOPB;
+    tty.c_cflag &= ~CRTSCTS;
+
+    if (tcsetattr(fd, TCSANOW, &tty) != 0) {
+      std::cerr << "Error from tcsetattr: " << strerror(errno) << std::endl;
+      return false;
+    }
+    return true;
+  }
+
+  // Function to read data from the serial port
+  int readFromSerialPort(int fd, char *buffer, size_t size) {
+    return read(fd, buffer, size);
+  }
+
+  // Function to write data to the serial port
+  int writeToSerialPort(int fd, const char *buffer, size_t size) {
+    return write(fd, buffer, size);
+  }
+
+  // Function to close the serial port
+  void closeSerialPort(int fd) { close(fd); }
+
+  SerialBridge(char *prot_location) {
+    file_description = open_serial_port(prot_location);
+
+    if (!configureSerialPort(file_description, 9600)) {
+      exit(1);
+    }
+  }
+
+  bool send_struct(const CommunicationData data) {
+    writeToSerialPort(file_description, (char *)&data, sizeof(data));
+    return true;
+  }
+
+  CommunicationData get_data() {
+
+    CommunicationData buffer;
+    while (1) {
+
+      // fill the buffer with zeros
+      
+      memset(&buffer, 0, sizeof(buffer));
+
+
+
+      start_byte_search = 0x00;
+
+      while (start_byte_search != START_BYTE) {
+        readFromSerialPort(file_description, (char *)&start_byte_search,
+                           sizeof(start_byte_search));
+      }
+
+      buffer.start_byte =
+          start_byte_search; // set it to AA, which it will be because it has
+                             // come out of the loop
+
+      readFromSerialPort(file_description, (char *)&buffer.x,
+                         sizeof(buffer) - sizeof(buffer.start_byte));
+
+      // check the crc, if it is not right go to begining
+
+      if (buffer.end_byte == END_BYTE) {
+        if (calculate_cr8x_fast((uint8_t *)&buffer,
+                                sizeof(buffer) - sizeof(buffer.crc)) ==
+            buffer.crc) {
+          break;
+        }
+      }
+    }
+    return buffer;
+  }
+
+private:
+};
+
+// int main() {
+
+//   char *port = new char[50];
+//   strcpy(port, "/dev/ttyACM0");
+
+//   SerialBridge serial_bridge(port);
+
+//   while (1) {
+//     print_this(serial_bridge.get_data());
+//   }
+
+//   delete[] port;
+//   return 0;
+// }

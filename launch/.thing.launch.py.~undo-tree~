@@ -1,0 +1,43 @@
+(undo-tree-save-format-version . 1)
+"dac5452b13d3d4a3b6e9f7dbb21c481612bc7e8a"
+[nil nil nil nil (26345 45609 963072 728000) 0 nil]
+([nil nil ((#("p" 0 1 (fontified t)) . -1) (undo-tree-id90 . -1) 2 (1 . 2) (t . -1)) nil (26345 45609 963071 689000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 1825 . 1826) (nil fontified nil 1 . 1826) (1 . 1826)) nil (26345 45609 963070 458000) 0 nil])
+([nil nil ((#("
+            ComposableNode(
+                package='listener_com',
+                plugin='listener_com::MinimalSubscriber',
+                name='listener',
+                # ..
+                extra_arguments=[{'use_intra_process_comms': True}],
+            ),
+
+            ComposableNode(
+                package='managed_talker',
+                plugin='managed_talker::Life_Talker',
+                name='lifetalker',
+                # ..
+                extra_arguments=[{'use_intra_process_comms': True}],
+            ),
+
+            # ComposableNode(
+            #     package='managed_talker',
+            #     plugin='managed_talker::LifeActivator',
+            #     name='lifeactivator',
+            #     parameters=[
+            #         {\"lifecycles_list\": [\"talker\", \"listener\", \"lifetalker\"]}
+            #         #                {\"lifecycles_list\": [\"talker\", \"listener\" ]}
+            #     ],
+            #     # ..
+            #     extra_arguments=[{'use_intra_process_comms': True}],
+            # ),
+
+
+
+" 0 27 (fontified t) 27 28 (face (rainbow-delimiters-depth-3-face) fontified t) 28 52 (fontified t) 52 53 (face font-lock-operator-face fontified t) 53 67 (face font-lock-string-face fontified t) 67 91 (fontified t) 91 92 (face font-lock-operator-face fontified t) 92 125 (face font-lock-string-face fontified t) 125 147 (fontified t) 147 148 (face font-lock-operator-face fontified t) 148 158 (face font-lock-string-face fontified t) 158 176 (fontified t) 176 178 (face font-lock-comment-delimiter-face fontified t) 178 181 (face font-lock-comment-face fontified t) 181 212 (fontified t) 212 213 (face font-lock-operator-face fontified t) 213 214 (face (rainbow-delimiters-depth-4-face) fontified t) 214 215 (face (rainbow-delimiters-depth-5-face) fontified t) 215 240 (face font-lock-string-face fontified t) 240 242 (fontified t) 242 246 (face font-lock-constant-face fontified t) 246 247 (face (rainbow-delimiters-depth-5-face) fontified t) 247 248 (face (rainbow-delimiters-depth-4-face) fontified t) 248 262 (fontified t) 262 263 (face (rainbow-delimiters-depth-3-face) fontified t) 263 292 (fontified t) 292 293 (face (rainbow-delimiters-depth-3-face) fontified t) 293 317 (fontified t) 317 318 (face font-lock-operator-face fontified t) 318 334 (face font-lock-string-face fontified t) 334 358 (fontified t) 358 359 (face font-lock-operator-face fontified t) 359 388 (face font-lock-string-face fontified t) 388 410 (fontified t) 410 411 (face font-lock-operator-face fontified t) 411 423 (face font-lock-string-face fontified t) 423 441 (fontified t) 441 443 (face font-lock-comment-delimiter-face fontified t) 443 446 (face font-lock-comment-face fontified t) 446 477 (fontified t) 477 478 (face font-lock-operator-face fontified t) 478 479 (face (rainbow-delimiters-depth-4-face) fontified t) 479 480 (face (rainbow-delimiters-depth-5-face) fontified t) 480 505 (face font-lock-string-face fontified t) 505 507 (fontified t) 507 511 (face font-lock-constant-face fontified t) 511 512 (face (rainbow-delimiters-depth-5-face) fontified t) 512 513 (face (rainbow-delimiters-depth-4-face) fontified t) 513 527 (fontified t) 527 528 (face (rainbow-delimiters-depth-3-face) fontified t) 528 543 (fontified t) 543 545 (face font-lock-comment-delimiter-face fontified t) 545 561 (face font-lock-comment-face fontified t) 561 573 (fontified t) 573 579 (face font-lock-comment-delimiter-face fontified t) 579 605 (face font-lock-comment-face fontified t) 605 617 (fontified t) 617 623 (face font-lock-comment-delimiter-face fontified t) 623 663 (face font-lock-comment-face fontified t) 663 675 (fontified t) 675 681 (face font-lock-comment-delimiter-face fontified t) 681 703 (face font-lock-comment-face fontified t) 703 715 (fontified t) 715 721 (face font-lock-comment-delimiter-face fontified t) 721 734 (face font-lock-comment-face fontified t) 734 746 (fontified t) 746 756 (face font-lock-comment-delimiter-face fontified t) 756 804 (face font-lock-comment-face fontified t) 804 814 (face font-lock-comment-face fontified t) 814 826 (fontified t) 826 836 (face font-lock-comment-delimiter-face fontified t) 836 898 (face font-lock-comment-face fontified t) 898 910 (fontified t) 910 916 (face font-lock-comment-delimiter-face fontified t) 916 919 (face font-lock-comment-face fontified t) 919 931 (fontified t) 931 937 (face font-lock-comment-delimiter-face fontified t) 937 942 (face font-lock-comment-face fontified t) 942 954 (fontified t) 954 960 (face font-lock-comment-delimiter-face fontified t) 960 1013 (face font-lock-comment-face fontified t) 1013 1025 (fontified t) 1025 1027 (face font-lock-comment-delimiter-face fontified t) 1027 1030 (face font-lock-comment-face fontified t) 1030 1033 (fontified t)) . 697) (undo-tree-id86 . -1032) (undo-tree-id87 . -1032) (undo-tree-id88 . -1032) (undo-tree-id89 . -1032) 1729) nil (26345 45630 437772 881000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 508 . 509) (487 . 509) (#("component_practice" 0 18 (face font-lock-string-face fontified t)) . 487) (undo-tree-id92 . -17) (undo-tree-id93 . -18) (undo-tree-id94 . -18) (undo-tree-id95 . -18) (undo-tree-id96 . -18) (undo-tree-id97 . -18) (undo-tree-id98 . -18) (undo-tree-id99 . -18) (undo-tree-id100 . -18) (undo-tree-id101 . -18) (undo-tree-id102 . -18) (undo-tree-id103 . -18) (undo-tree-id104 . -18) (undo-tree-id105 . -18) (undo-tree-id106 . -18) (undo-tree-id107 . -18) (undo-tree-id108 . -18) (undo-tree-id109 . -18) (undo-tree-id110 . -18) (undo-tree-id111 . -18) (undo-tree-id112 . -18) (undo-tree-id113 . -18) (undo-tree-id114 . -18) (undo-tree-id115 . -18) (undo-tree-id116 . -18) (undo-tree-id117 . -18) (undo-tree-id118 . -18) (undo-tree-id119 . -18) (undo-tree-id120 . -18) (undo-tree-id121 . -18) (undo-tree-id122 . -18) (undo-tree-id123 . -18) (undo-tree-id124 . -18) (undo-tree-id125 . -18) (undo-tree-id126 . -18) (undo-tree-id127 . -18) (undo-tree-id128 . -18) (undo-tree-id129 . -18) (undo-tree-id130 . -18)) ((487 . 505) (#("Serial_Bridge_Skeleton" 0 21 (face font-lock-string-face fontified nil) 21 22 (face font-lock-string-face rear-nonsticky nil fontified nil)) . 487) (undo-tree-id91 . -21) (nil rear-nonsticky t 508 . 509) (t 26345 45609 972752 87000)) (26345 45632 267383 778000) 0 nil])
+([nil nil ((nil rear-nonsticky nil 564 . 565) (nil fontified nil 536 . 565) (536 . 565) (#("component_practice::PraPub" 0 26 (face font-lock-string-face fontified t)) . 536) (undo-tree-id131 . -26) (undo-tree-id132 . -25) (undo-tree-id133 . -25) (undo-tree-id134 . -25) 562 (t 26345 45609 972752 87000)) nil (26345 45637 115469 99000) 0 nil])
+([nil nil ((#("talker" 0 6 (face font-lock-string-face fontified t)) . 590) (undo-tree-id152 . -5) (undo-tree-id153 . -6) (undo-tree-id154 . -6) (undo-tree-id155 . -6) (undo-tree-id156 . -6) (undo-tree-id157 . -6) (undo-tree-id158 . -6) (undo-tree-id159 . -6) (undo-tree-id160 . -6) (undo-tree-id161 . -6) (undo-tree-id162 . -6) (undo-tree-id163 . -6) (undo-tree-id164 . -6) (undo-tree-id165 . -6) (undo-tree-id166 . -6) (undo-tree-id167 . -6) (undo-tree-id168 . -6) (t 26345 45637 128377 834000)) nil (26345 45644 975849 381000) 0 nil])
+([nil nil ((590 . 600) (#("T" 0 1 (face font-lock-string-face fontified t)) . -590) (undo-tree-id135 . -1) (undo-tree-id136 . -1) (undo-tree-id137 . -1) (undo-tree-id138 . -1) (undo-tree-id139 . -1) (undo-tree-id140 . -1) (undo-tree-id141 . -1) (undo-tree-id142 . -1) (undo-tree-id143 . -1) (undo-tree-id144 . -1) (undo-tree-id145 . -1) (undo-tree-id146 . -1) (undo-tree-id147 . -1) (undo-tree-id148 . -1) (undo-tree-id149 . -1) (undo-tree-id150 . -1) (undo-tree-id151 . -1) 591 (590 . 591)) nil (26345 45644 975832 641000) 0 nil])
+([nil current ((536 . 537) (#("s" 0 1 (face font-lock-string-face fontified t)) . 536) (undo-tree-id169 . -1) (t 26345 45644 987394 573000)) nil (26345 45785 971716 366000) 0 nil])
+nil

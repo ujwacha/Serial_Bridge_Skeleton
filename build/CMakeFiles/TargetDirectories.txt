@@ -1,0 +1,10 @@
+/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/build/CMakeFiles/uninstall.dir
+/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/build/CMakeFiles/Serial_Bridge_Skeleton_uninstall.dir
+/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/build/CMakeFiles/Serial_Skili_component.dir
+/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/build/CMakeFiles/test.dir
+/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/build/CMakeFiles/edit_cache.dir
+/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/build/CMakeFiles/rebuild_cache.dir
+/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/build/CMakeFiles/list_install_components.dir
+/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/build/CMakeFiles/install.dir
+/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/build/CMakeFiles/install/local.dir
+/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/build/CMakeFiles/install/strip.dir

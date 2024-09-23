@@ -1,0 +1,4 @@
+source;share/Serial_Bridge_Skeleton/local_setup.bash
+source;share/Serial_Bridge_Skeleton/local_setup.dsv
+source;share/Serial_Bridge_Skeleton/local_setup.sh
+source;share/Serial_Bridge_Skeleton/local_setup.zsh
