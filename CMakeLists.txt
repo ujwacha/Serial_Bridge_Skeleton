@@ -14,7 +14,12 @@ find_package(geometry_msgs REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(composition REQUIRED)
 
+# set(SERIAL_LIB "/usr/local/lib/libserial.so")
+# set(SERIAL_INCLUDE_DIR "/usr/local/include/libserial")
 
+include_directories(${SERIAL_INCLUDE_DIR})
+
+# Add include directories
 
 #add_library(Serial_Skili_component SHARED src/main.cpp)
 add_executable(Serial_Skili_component src/main.cpp)
@@ -22,7 +27,9 @@ add_executable(Serial_Skili_component src/main.cpp)
 
 target_include_directories(Serial_Skili_component PUBLIC include/Serial_Bridge_Skeleton)
 
-ament_target_dependencies(Serial_Skili_component rclcpp std_msgs geometry_msgs rclcpp_components)
+ament_target_dependencies(Serial_Skili_component rclcpp std_msgs geometry_msgs rclcpp_components )
+
+target_link_libraries(Serial_Skili_component serial)
 
 
 # rclcpp_components_register_node(

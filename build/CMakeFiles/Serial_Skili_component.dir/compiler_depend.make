@@ -409,6 +409,11 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp \
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/bool.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
   /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
@@ -551,7 +556,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/chrono \
-  /usr/include/c++/13/cinttypes \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cmath \
   /usr/include/c++/13/codecvt \
@@ -640,14 +644,13 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
-  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
-  /usr/include/inttypes.h \
   /usr/include/libintl.h \
+  /usr/include/libserial/SerialPort.h \
+  /usr/include/libserial/SerialPortConstants.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
-  /usr/include/linux/falloc.h \
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
@@ -673,8 +676,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
-  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -711,7 +712,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
   /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
   /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
-  /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -719,7 +719,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
   /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
   /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
@@ -758,7 +757,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
   /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
@@ -857,6 +855,8 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
@@ -939,8 +939,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
-
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
@@ -971,19 +969,15 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /usr/include/locale.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/linux/falloc.h:
-
 /usr/include/linux/close_range.h:
+
+/usr/include/libserial/SerialPortConstants.h:
+
+/usr/include/libserial/SerialPort.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/libintl.h:
-
-/usr/include/inttypes.h:
-
-/usr/include/fcntl.h:
 
 /usr/include/errno.h:
 
@@ -998,10 +992,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /usr/include/c++/13/unordered_map:
 
 /usr/include/c++/13/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -1113,8 +1103,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /usr/include/c++/13/clocale:
 
-/usr/include/c++/13/cinttypes:
-
 /usr/include/c++/13/chrono:
 
 /usr/include/c++/13/cassert:
@@ -1129,11 +1117,15 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /usr/include/c++/13/bits/unordered_set.h:
 
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/usr/include/c++/13/bits/unique_lock.h:
+
+/usr/include/c++/13/bits/uniform_int_dist.h:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/qos_overriding_options.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/signal.h:
 
@@ -1228,6 +1220,8 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /opt/ros/jazzy/include/rclcpp/rclcpp/macros.hpp:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/intra_process_setting.hpp:
 
@@ -1387,8 +1381,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
-
 /opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
 
 /opt/ros/jazzy/include/rcl/rcl/service.h:
@@ -1509,8 +1501,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /opt/ros/jazzy/include/class_loader/class_loader/visibility_control.hpp:
 
-/usr/include/c++/13/bits/unique_ptr.h:
-
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
@@ -1597,8 +1587,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/fcntl.h:
-
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
@@ -1630,6 +1618,12 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
 
 /opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp:
+
+/usr/include/c++/13/bits/unordered_map.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/any_service_callback.hpp:
 
 /opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
 
@@ -1807,8 +1801,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
-
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
@@ -1822,6 +1814,8 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /usr/include/c++/13/tr1/gamma.tcc:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/bool.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
 
@@ -1971,6 +1965,8 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /usr/include/c++/13/initializer_list:
 
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
+
 /opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h:
 
 /usr/include/c++/13/bits/specfun.h:
@@ -2008,8 +2004,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /opt/ros/jazzy/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/include/c++/13/bits/uniform_int_dist.h:
 
 /opt/ros/jazzy/include/rmw/rmw/dynamic_message_type_support.h:
 
@@ -2225,6 +2219,16 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /usr/include/alloca.h:
 
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp:
+
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp:
 
 /opt/ros/jazzy/include/tracetools/tracetools/config.h:
@@ -2304,8 +2308,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /usr/include/c++/13/bits/exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/c++/13/bits/this_thread_sleep.h:
 
@@ -2400,11 +2402,3 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
 /usr/include/c++/13/bits/string_view.tcc:
-
-/usr/include/c++/13/bits/unique_lock.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/any_service_callback.hpp:
-
-/usr/include/c++/13/bits/unordered_map.h:

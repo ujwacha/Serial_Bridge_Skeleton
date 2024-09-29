@@ -700,13 +700,14 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/bool.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
  /home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/include/Serial_Bridge_Skeleton/serial_class.hpp \
- /usr/include/c++/13/cinttypes /usr/include/inttypes.h \
- /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h /usr/include/termios.h \
+ /usr/include/libserial/SerialPort.h \
+ /usr/include/libserial/SerialPortConstants.h /usr/include/termios.h \
  /usr/include/x86_64-linux-gnu/bits/termios.h \
  /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
  /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \

@@ -1,15 +1,13 @@
-#include <cinttypes>
-#include <cmath>
 #include <cstddef>
 #include <cstdint>
-#include <cstdlib>
 #include <cstring>
-#include <errno.h>
-#include <fcntl.h>
-#include <iostream>
+#include <libserial/SerialPort.h>
+#include <libserial/SerialPortConstants.h>
 #include <string>
-#include <termios.h>
-#include <unistd.h>
+#include <iostream>
+
+#include <chrono>
+#include <thread>
 
 #define START_BYTE 0xAA
 #define END_BYTE 0xBB
@@ -33,17 +31,11 @@ struct CommunicationData {
   uint8_t theta;
   uint8_t zz;
 
-  // Odom From Controller
-
-  // float_t odom_x;
-  // float_t odom_y;
-  // float_t odom_yaw;
-
-
   // end byte and crc
   uint8_t end_byte;
   uint8_t crc;
 };
+
 #pragma pack(pop)
 
 void print_this(CommunicationData cd) {
@@ -57,7 +49,18 @@ void print_this(CommunicationData cd) {
             << "on_off:\t" << (int)cd.on_off << std::endl
             << "theta:\t" << (int)cd.theta << std::endl
             << "zz:\t" << (int)cd.zz << std::endl;
+
+
+  //  std::cout << "DATA IN" << std::endl;
 }
+
+enum State {
+  START_BYTE_FOUND,
+  START_BYTE_NOT_FOUND,
+  
+};
+
+
 
 const uint8_t crc8x_table[256] = {
     0x00, 0x31, 0x62, 0x53, 0xC4, 0xF5, 0xA6, 0x97, 0xB9, 0x88, 0xDB, 0xEA,
@@ -91,138 +94,119 @@ uint8_t calculate_cr8x_fast(uint8_t *data, size_t len) {
   return crc;
 }
 
-class SerialBridge {
-public:
-  CommunicationData standard;
-  uint8_t start_byte_search;
 
-  int file_description;
+bool verify_communication(CommunicationData d) {
 
-  int open_serial_port(char *portname) {
-    int fd = open(portname, O_RDWR | O_NOCTTY | O_SYNC);
+  if (d.start_byte != START_BYTE) return false;
 
-    if (fd < 0) {
-      std::cerr << "[ERROR]"
-                << "Error Opening " << portname << std::endl;
+  if (d.end_byte != END_BYTE) return false;
 
-      exit(1);
-    }
+  uint8_t current_crc = calculate_cr8x_fast((uint8_t*)(&d), sizeof(d) - sizeof(d.crc));
 
-    return fd;
+  if (d.crc != current_crc) return false;
+
+  return true;
+  
+}
+
+
+
+
+class BridgeClass {
+  public:
+  BridgeClass(std::string port): Bridge(port) {
+    Bridge.SetBaudRate(LibSerial::BaudRate::BAUD_115200);
+    
+    Bridge.SetCharacterSize(LibSerial::CharacterSize::CHAR_SIZE_8);
+    
+    Bridge.SetFlowControl(LibSerial::FlowControl::FLOW_CONTROL_NONE);
+    
+    Bridge.SetParity(LibSerial::Parity::PARITY_NONE);
+
+    current_state = START_BYTE_NOT_FOUND;
+
   }
 
-  // Function to configure the serial port
-  bool configureSerialPort(int fd, int speed) {
-    struct termios tty;
-    if (tcgetattr(fd, &tty) != 0) {
-      std::cerr << "Error from tcgetattr: " << strerror(errno) << std::endl;
-      return false;
+  ~BridgeClass() {
+    Bridge.Close();
+  }
+
+
+  CommunicationData attempt_get_non_blocking() {
+    // Clear The Buffer
+    memset(&Buffer, 0, sizeof(Buffer));
+    byte_buffer = 0x00;
+    
+    switch (current_state) {
+    case START_BYTE_FOUND:
+      current_state = START_BYTE_NOT_FOUND;
+
+      Buffer.start_byte = START_BYTE;
+      DataBufferFromLib.resize(sizeof(Buffer) - sizeof(Buffer.start_byte));
+
+      try {
+	
+	Bridge.Read(DataBufferFromLib, sizeof(Buffer) - sizeof(Buffer.start_byte), 10); // buffer , size , timeout_ms
+      } catch (...) {
+	std::cout << "[ERROR] Exceded Time limit 10ms to read Buffer " << std::endl;
+      }
+
+
+      if (DataBufferFromLib.size() != sizeof(Buffer) - sizeof(Buffer.start_byte))
+	std::cout << "[URGENT] BUFFER SIZE DOES NOT MATCH" << std::endl;
+											   
+
+      std::memcpy(&(Buffer.x), DataBufferFromLib.data(), sizeof(Buffer) - sizeof(Buffer.start_byte)); //
+      DataBufferFromLib.clear(); // Clean the buffer
+
+      if (!verify_communication(Buffer)) throw -2;
+      else return Buffer;
+      break;
+
+    case START_BYTE_NOT_FOUND:
+
+      try {
+	Bridge.ReadByte(byte_buffer);
+      } catch (...) {
+	std::cout << "[ERROR] Error Occoured While Reading Byte" << std::endl;
+      }
+
+      if (byte_buffer == START_BYTE) current_state = START_BYTE_FOUND;
+      throw -1;
+      break;
     }
+    
+    // You Will Never Reach Here;
+    return Buffer;
+  }
 
-    cfsetospeed(&tty, speed);
-    cfsetispeed(&tty, speed);
+  bool attempt_send_probably_blocking(CommunicationData d) {
+    if (!verify_communication(d)) return false;
+    // Clear The Data Buffer Just To Be Sure
+    DataBufferFromLib.clear();
+    DataBufferFromLib.resize(sizeof(d));
+    memcpy(DataBufferFromLib.data(), &d, sizeof(d)); // store d in the buffer
+    Bridge.Write(DataBufferFromLib);
 
-    tty.c_cflag = (tty.c_cflag & ~CSIZE) | CS8; // 8-bit characters
-    tty.c_iflag &= ~IGNBRK;                     // disable break processing
-    tty.c_lflag = 0;     // no signaling chars, no echo, no
-                         // canonical processing
-    tty.c_oflag = 0;     // no remapping, no delays
-    tty.c_cc[VMIN] = 0;  // read doesn't block
-    tty.c_cc[VTIME] = 5; // 0.5 seconds read timeout
-
-    tty.c_iflag &= ~(IXON | IXOFF | IXANY); // shut off xon/xoff ctrl
-
-    tty.c_cflag |= (CLOCAL | CREAD);   // ignore modem controls,
-                                       // enable reading
-    tty.c_cflag &= ~(PARENB | PARODD); // shut off parity
-    tty.c_cflag &= ~CSTOPB;
-    tty.c_cflag &= ~CRTSCTS;
-
-    if (tcsetattr(fd, TCSANOW, &tty) != 0) {
-      std::cerr << "Error from tcsetattr: " << strerror(errno) << std::endl;
-      return false;
-    }
     return true;
   }
 
-  // Function to read data from the serial port
-  int readFromSerialPort(int fd, char *buffer, size_t size) {
-    return read(fd, buffer, size);
+  void drian_attempt_blocking() {
+    Bridge.DrainWriteBuffer();
   }
-
-  // Function to write data to the serial port
-  int writeToSerialPort(int fd, const char *buffer, size_t size) {
-    return write(fd, buffer, size);
-  }
-
-  // Function to close the serial port
-  void closeSerialPort(int fd) { close(fd); }
-
-  SerialBridge(char *prot_location) {
-    file_description = open_serial_port(prot_location);
-
-    if (!configureSerialPort(file_description, 9600)) {
-      exit(1);
-    }
-  }
-
-  bool send_struct(const CommunicationData data) {
-    writeToSerialPort(file_description, (char *)&data, sizeof(data));
-    return true;
-  }
-
-  CommunicationData get_data() {
-
-    CommunicationData buffer;
-    while (1) {
-
-      // fill the buffer with zeros
-      
-      memset(&buffer, 0, sizeof(buffer));
+  
+  private:
 
 
+  LibSerial::DataBuffer DataBufferFromLib;
 
-      start_byte_search = 0x00;
+  CommunicationData Buffer;
+  
+  LibSerial::SerialPort Bridge;
 
-      while (start_byte_search != START_BYTE) {
-        readFromSerialPort(file_description, (char *)&start_byte_search,
-                           sizeof(start_byte_search));
-      }
+  enum State current_state;
 
-      buffer.start_byte =
-          start_byte_search; // set it to AA, which it will be because it has
-                             // come out of the loop
-
-      readFromSerialPort(file_description, (char *)&buffer.x,
-                         sizeof(buffer) - sizeof(buffer.start_byte));
-
-      // check the crc, if it is not right go to begining
-
-      if (buffer.end_byte == END_BYTE) {
-        if (calculate_cr8x_fast((uint8_t *)&buffer,
-                                sizeof(buffer) - sizeof(buffer.crc)) ==
-            buffer.crc) {
-          break;
-        }
-      }
-    }
-    return buffer;
-  }
-
-private:
+  uint8_t byte_buffer;
+  
 };
 
-// int main() {
-
-//   char *port = new char[50];
-//   strcpy(port, "/dev/ttyACM0");
-
-//   SerialBridge serial_bridge(port);
-
-//   while (1) {
-//     print_this(serial_bridge.get_data());
-//   }
-
-//   delete[] port;
-//   return 0;
-// }
