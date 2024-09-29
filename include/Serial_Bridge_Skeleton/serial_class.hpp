@@ -109,6 +109,12 @@ bool verify_communication(CommunicationData d) {
   
 }
 
+void make_sendable_with_metadata(CommunicationData & c) {
+  c.start_byte = START_BYTE;
+  c.end_byte = END_BYTE;
+  c.crc = calculate_cr8x_fast((uint8_t*)&c, sizeof(c) - sizeof(c.crc));
+}
+
 
 
 
@@ -186,7 +192,12 @@ class BridgeClass {
     DataBufferFromLib.clear();
     DataBufferFromLib.resize(sizeof(d));
     memcpy(DataBufferFromLib.data(), &d, sizeof(d)); // store d in the buffer
-    Bridge.Write(DataBufferFromLib);
+
+    try {
+      Bridge.Write(DataBufferFromLib);
+    } catch (...) {
+      throw -1;
+    }
 
     return true;
   }

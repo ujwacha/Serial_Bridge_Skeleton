@@ -25,10 +25,13 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp \
@@ -1123,7 +1126,11 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /usr/include/c++/13/bits/uniform_int_dist.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/qos_overriding_options.hpp:
+/usr/include/c++/13/cerrno:
+
+/usr/include/c++/13/bits/stringfwd.h:
+
+/usr/include/c++/13/bits/string_view.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -1241,14 +1248,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /opt/ros/jazzy/include/rcl/rcl/network_flow_endpoints.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/rate.hpp:
-
-/usr/include/c++/13/cctype:
-
-/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/guard_condition.hpp:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
@@ -1279,10 +1278,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /usr/include/c++/13/bits/std_abs.h:
 
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_description__struct.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/event.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
@@ -1294,10 +1289,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/client.h:
 
 /usr/include/pthread.h:
 
@@ -1330,8 +1321,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_generic_publisher.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_client.hpp:
-
-/opt/ros/jazzy/include/class_loader/class_loader/exceptions.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp:
 
@@ -1383,13 +1372,7 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/service.h:
-
-/usr/include/c++/13/system_error:
-
-/usr/include/c++/13/bits/ostream_insert.h:
-
-/usr/include/c++/13/bits/stl_set.h:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -1431,6 +1414,12 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /opt/ros/jazzy/include/rcl/rcl/graph.h:
 
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/type_description__struct.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/event.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
 /usr/include/c++/13/bits/ostream.tcc:
@@ -1440,6 +1429,10 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /opt/ros/jazzy/include/rcl/rcl/context.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
 
@@ -1479,6 +1472,20 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /opt/ros/jazzy/include/rcutils/rcutils/visibility_control.h:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/domain_id.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set.hpp:
+
+/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/include/Serial_Bridge_Skeleton/serial_class.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+
 /opt/ros/jazzy/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
@@ -1493,41 +1500,17 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /usr/include/c++/13/bits/exception_defines.h:
 
-/usr/include/stdint.h:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/vector3.hpp:
 
-/opt/ros/jazzy/include/rcl/rcl/subscription.h:
+/opt/ros/jazzy/include/rclcpp/rclcpp/loaned_message.hpp:
 
-/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/identifier.h:
-
-/opt/ros/jazzy/include/class_loader/class_loader/visibility_control.hpp:
+/opt/ros/jazzy/include/rcl/rcl/visibility_control.h:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/service_introspection.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/domain_id.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/wait_set.hpp:
-
-/home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/include/Serial_Bridge_Skeleton/serial_class.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+/opt/ros/jazzy/include/class_loader/class_loader/exceptions.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
@@ -1550,16 +1533,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /opt/ros/jazzy/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
-
-/usr/include/c++/13/bits/range_access.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/loaned_message.hpp:
-
-/opt/ros/jazzy/include/rcl/rcl/visibility_control.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
@@ -1609,10 +1582,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
@@ -1628,6 +1597,22 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
+
+/opt/ros/jazzy/include/class_loader/class_loader/visibility_control.hpp:
+
+/usr/include/stdint.h:
+
+/opt/ros/jazzy/include/rcl/rcl/subscription.h:
+
+/opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/identifier.h:
+
+/usr/include/c++/13/cctype:
+
+/opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/rate.hpp:
 
 /usr/include/c++/13/bits/requires_hosted.h:
 
@@ -1647,13 +1632,41 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
 
+/opt/ros/jazzy/include/rcl/rcl/service.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
+
+/usr/include/c++/13/system_error:
+
+/usr/include/c++/13/bits/ostream_insert.h:
+
+/usr/include/c++/13/bits/stl_set.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
+
+/usr/include/c++/13/bits/range_access.h:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
 /usr/include/c++/13/bits/predefined_ops.h:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/qos.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/usr/include/c++/13/bits/charconv.h:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/service_introspection.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/publisher_options.h:
 
@@ -1751,8 +1764,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
-
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
@@ -1827,6 +1838,12 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
 
+/opt/ros/jazzy/include/rclcpp/rclcpp/qos_overriding_options.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/client.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:
+
 /usr/include/string.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/serialized_message.hpp:
@@ -1886,6 +1903,8 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
 
 /usr/include/c++/13/bits/chrono.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/wait_result_kind.hpp:
 
@@ -1990,10 +2009,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /opt/ros/jazzy/include/rcutils/rcutils/types/string_map.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/uint8_array.h:
-
-/usr/include/c++/13/cerrno:
-
-/usr/include/c++/13/bits/stringfwd.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h:
 
@@ -2396,9 +2411,3 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: /home/light/robocon2025/RO
 /usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/c++/13/bits/stream_iterator.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/usr/include/c++/13/bits/string_view.tcc:
