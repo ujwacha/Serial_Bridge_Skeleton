@@ -1,6 +1,6 @@
 #include "geometry_msgs/msg/twist.hpp"
 #include "geometry_msgs/msg/vector3.hpp"
-#include "rclcpp/rclcpp.hpp"
+//#include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/bool.hpp"
 #include "std_msgs/msg/string.hpp"
 #include <chrono>
@@ -59,14 +59,14 @@ public:
         "boolsub", currentqol,
         std::bind(&Sayer::boolsubfun, this, std::placeholders::_1));
 
-    timer = this->create_wall_timer(std::chrono::microseconds(1),
+    timer = this->create_wall_timer(std::chrono::milliseconds(1),
                                     std::bind(&Sayer::get_data, this));
 
-    sendtimer = this->create_wall_timer(std::chrono::microseconds(10),
+    sendtimer = this->create_wall_timer(std::chrono::milliseconds(10),
                                     std::bind(&Sayer::send_data, this));
 
 
-
+    
   }
 
   void get_data() {
@@ -193,8 +193,16 @@ private:
   rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr subscription2;
   rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscription3;
 
+  rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr subscriptionlol;
+
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr boolsub;
 
+
+  rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr anotherstupidbool; 
+  
+
+
+  
   // Timer
   rclcpp::TimerBase::SharedPtr timer;
 
@@ -220,5 +228,7 @@ int main(int argc, char *argv[]) {
 
   rclcpp::shutdown();
 
+ 
+ 
   return 0;
 }

@@ -221,85 +221,68 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp \
- /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp \
- /usr/include/c++/13/csignal /usr/include/signal.h \
- /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
- /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
- /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigstksz.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
- /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
- /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.hpp \
- /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
- /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__traits.hpp \
- /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
- /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
- /opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp \
- /usr/include/c++/13/iostream \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
- /opt/ros/jazzy/include/rclcpp/rclcpp/exceptions.hpp \
- /opt/ros/jazzy/include/rclcpp/rclcpp/exceptions/exceptions.hpp \
- /opt/ros/jazzy/include/rcl/rcl/error_handling.h \
- /opt/ros/jazzy/include/rcutils/rcutils/error_handling.h \
- /usr/include/assert.h /usr/include/c++/13/stdlib.h \
- /opt/ros/jazzy/include/rcutils/rcutils/snprintf.h \
- /opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/bool.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
+ /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
+ /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
+ /usr/include/c++/13/limits /usr/include/c++/13/bits/parse_numbers.h \
+ /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/erase_if.h \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp \
+ /usr/include/c++/13/future /usr/include/c++/13/mutex \
+ /usr/include/c++/13/bits/std_mutex.h \
+ /usr/include/c++/13/bits/unique_lock.h \
+ /usr/include/c++/13/condition_variable \
+ /usr/include/c++/13/bits/atomic_futex.h /usr/include/c++/13/atomic \
+ /usr/include/c++/13/bits/std_thread.h \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp \
+ /usr/include/c++/13/set /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/stl_multiset.h /usr/include/c++/13/thread \
+ /usr/include/c++/13/bits/this_thread_sleep.h \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp \
+ /usr/include/c++/13/cassert /usr/include/assert.h \
+ /usr/include/c++/13/iostream /usr/include/c++/13/list \
+ /usr/include/c++/13/bits/stl_list.h /usr/include/c++/13/bits/list.tcc \
+ /usr/include/c++/13/map /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /opt/ros/jazzy/include/rcl/rcl/guard_condition.h \
+ /opt/ros/jazzy/include/rcl/rcl/allocator.h \
+ /opt/ros/jazzy/include/rcl/rcl/context.h \
+ /opt/ros/jazzy/include/rmw/rmw/init.h \
+ /opt/ros/jazzy/include/rmw/rmw/init_options.h \
+ /opt/ros/jazzy/include/rmw/rmw/discovery_options.h \
+ /opt/ros/jazzy/include/rmw/rmw/macros.h \
+ /opt/ros/jazzy/include/rmw/rmw/ret_types.h \
+ /opt/ros/jazzy/include/rmw/rmw/visibility_control.h \
+ /opt/ros/jazzy/include/rmw/rmw/domain_id.h \
+ /opt/ros/jazzy/include/rmw/rmw/localhost.h \
+ /opt/ros/jazzy/include/rmw/rmw/security_options.h \
+ /opt/ros/jazzy/include/rcl/rcl/arguments.h \
+ /opt/ros/jazzy/include/rcl/rcl/log_level.h \
+ /opt/ros/jazzy/include/rcl/rcl/macros.h \
  /opt/ros/jazzy/include/rcl/rcl/types.h \
  /opt/ros/jazzy/include/rmw/rmw/types.h \
  /opt/ros/jazzy/include/rcutils/rcutils/logging.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/error_handling.h \
+ /usr/include/c++/13/stdlib.h /usr/include/string.h \
+ /usr/include/strings.h /opt/ros/jazzy/include/rcutils/rcutils/snprintf.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/testing/fault_injection.h \
  /opt/ros/jazzy/include/rcutils/rcutils/time.h \
  /opt/ros/jazzy/include/rcutils/rcutils/types.h \
  /opt/ros/jazzy/include/rcutils/rcutils/types/array_list.h \
@@ -312,7 +295,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/rmw/rmw/events_statuses/events_statuses.h \
  /opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_qos.h \
  /opt/ros/jazzy/include/rmw/rmw/qos_policy_kind.h \
- /opt/ros/jazzy/include/rmw/rmw/visibility_control.h \
  /opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_type.h \
  /opt/ros/jazzy/include/rmw/rmw/events_statuses/liveliness_changed.h \
  /opt/ros/jazzy/include/rmw/rmw/events_statuses/liveliness_lost.h \
@@ -320,41 +302,19 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/rmw/rmw/events_statuses/message_lost.h \
  /opt/ros/jazzy/include/rmw/rmw/events_statuses/offered_deadline_missed.h \
  /opt/ros/jazzy/include/rmw/rmw/events_statuses/requested_deadline_missed.h \
- /opt/ros/jazzy/include/rmw/rmw/init.h \
- /opt/ros/jazzy/include/rmw/rmw/init_options.h \
- /opt/ros/jazzy/include/rmw/rmw/discovery_options.h \
- /opt/ros/jazzy/include/rmw/rmw/macros.h \
- /opt/ros/jazzy/include/rmw/rmw/ret_types.h \
- /opt/ros/jazzy/include/rmw/rmw/domain_id.h \
- /opt/ros/jazzy/include/rmw/rmw/localhost.h \
- /opt/ros/jazzy/include/rmw/rmw/security_options.h \
  /opt/ros/jazzy/include/rmw/rmw/serialized_message.h \
  /opt/ros/jazzy/include/rmw/rmw/subscription_content_filter_options.h \
  /opt/ros/jazzy/include/rmw/rmw/time.h \
- /opt/ros/jazzy/include/rclcpp/rclcpp/visibility_control.hpp \
- /opt/ros/jazzy/include/rcpputils/rcpputils/join.hpp \
- /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
- /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_value.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
- /opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp \
- /opt/ros/jazzy/include/rcl/rcl/node.h \
- /opt/ros/jazzy/include/rcl/rcl/allocator.h \
- /opt/ros/jazzy/include/rcl/rcl/arguments.h \
- /opt/ros/jazzy/include/rcl/rcl/log_level.h \
- /opt/ros/jazzy/include/rcl/rcl/macros.h \
  /opt/ros/jazzy/include/rcl/rcl/visibility_control.h \
  /opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h \
- /opt/ros/jazzy/include/rcl/rcl/context.h \
  /opt/ros/jazzy/include/rcl/rcl/init_options.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdalign.h \
- /opt/ros/jazzy/include/rcl/rcl/guard_condition.h \
+ /opt/ros/jazzy/include/rcl/rcl/wait.h \
+ /opt/ros/jazzy/include/rcl/rcl/client.h \
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
+ /opt/ros/jazzy/include/rcl/rcl/event_callback.h \
+ /opt/ros/jazzy/include/rmw/rmw/event_callback_type.h \
+ /opt/ros/jazzy/include/rcl/rcl/node.h \
  /opt/ros/jazzy/include/rcl/rcl/node_options.h \
  /opt/ros/jazzy/include/rcl/rcl/domain_id.h \
  /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/get_type_description.h \
@@ -371,33 +331,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
  /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__type_support.h \
- /opt/ros/jazzy/include/rcpputils/rcpputils/filesystem_helper.hpp \
- /usr/include/c++/13/cstdint \
- /opt/ros/jazzy/include/rcpputils/rcpputils/visibility_control.hpp \
- /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp \
- /opt/ros/jazzy/include/rcutils/rcutils/logging_macros.h \
- /opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp \
- /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
- /usr/include/c++/13/ratio /usr/include/c++/13/limits \
- /usr/include/c++/13/bits/parse_numbers.h /usr/include/c++/13/functional \
- /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/erase_if.h \
- /opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp \
- /usr/include/c++/13/condition_variable \
- /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/mutex \
- /usr/include/c++/13/typeindex /usr/include/c++/13/unordered_set \
- /usr/include/c++/13/bits/unordered_set.h \
- /opt/ros/jazzy/include/rcl/rcl/wait.h \
- /opt/ros/jazzy/include/rcl/rcl/client.h \
- /opt/ros/jazzy/include/rcl/rcl/event_callback.h \
- /opt/ros/jazzy/include/rmw/rmw/event_callback_type.h \
  /opt/ros/jazzy/include/rcl/rcl/publisher.h \
  /opt/ros/jazzy/include/rcl/rcl/time.h \
  /opt/ros/jazzy/include/rcl/rcl/service_introspection.h \
@@ -416,6 +349,7 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/rmw/rmw/features.h \
  /opt/ros/jazzy/include/rmw/rmw/message_sequence.h \
  /opt/ros/jazzy/include/rcl/rcl/timer.h \
+ /opt/ros/jazzy/include/rcutils/rcutils/logging_macros.h \
  /opt/ros/jazzy/include/rmw/rmw/rmw.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h \
  /opt/ros/jazzy/include/rmw/rmw/event.h \
@@ -423,23 +357,14 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/rmw/rmw/qos_profiles.h \
  /opt/ros/jazzy/include/rmw/rmw/subscription_options.h \
  /opt/ros/jazzy/include/rcl/rcl/event.h \
- /opt/ros/jazzy/include/rclcpp/rclcpp/init_options.hpp \
- /opt/ros/jazzy/include/rclcpp/rclcpp/macros.hpp \
- /opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp \
- /usr/include/c++/13/future /usr/include/c++/13/bits/atomic_futex.h \
- /usr/include/c++/13/atomic /usr/include/c++/13/bits/std_thread.h \
- /opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp \
- /usr/include/c++/13/set /usr/include/c++/13/bits/stl_tree.h \
- /usr/include/c++/13/bits/stl_set.h \
- /usr/include/c++/13/bits/stl_multiset.h /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/this_thread_sleep.h \
- /opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp \
- /usr/include/c++/13/cassert /usr/include/c++/13/list \
- /usr/include/c++/13/bits/stl_list.h /usr/include/c++/13/bits/list.tcc \
- /usr/include/c++/13/map /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/executors/executor_notify_waitable.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/guard_condition.hpp \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/context.hpp \
+ /usr/include/c++/13/typeindex /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/bits/unordered_set.h \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/init_options.hpp \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/visibility_control.hpp \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/macros.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/contexts/default_context.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/waitable.hpp \
  /opt/ros/jazzy/include/rcpputils/rcpputils/scope_exit.hpp \
@@ -450,10 +375,13 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/callback_group.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/client.hpp \
  /usr/include/c++/13/optional /usr/include/c++/13/variant \
+ /opt/ros/jazzy/include/rcl/rcl/error_handling.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/clock.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/time.hpp \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
+ /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
+ /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp \
@@ -463,8 +391,18 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/exceptions.hpp \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/exceptions/exceptions.hpp \
+ /opt/ros/jazzy/include/rcpputils/rcpputils/join.hpp \
+ /usr/include/c++/13/cstring /usr/include/c++/13/iterator \
+ /usr/include/c++/13/bits/stream_iterator.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/function_traits.hpp \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp \
+ /opt/ros/jazzy/include/rcpputils/rcpputils/filesystem_helper.hpp \
+ /opt/ros/jazzy/include/rcpputils/rcpputils/visibility_control.hpp \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
  /opt/ros/jazzy/include/rcl/rcl/graph.h \
  /opt/ros/jazzy/include/rmw/rmw/names_and_types.h \
@@ -479,6 +417,7 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/type_support_decl.hpp \
  /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp \
  /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp \
+ /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp \
  /opt/ros/jazzy/include/rmw/rmw/error_handling.h \
  /opt/ros/jazzy/include/rmw/rmw/impl/cpp/demangle.hpp \
  /usr/include/c++/13/cxxabi.h \
@@ -534,6 +473,12 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/qos_overriding_options.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics_state.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_traits.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp \
@@ -609,12 +554,27 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp \
  /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/generic_client.hpp \
  /opt/ros/jazzy/include/rcpputils/rcpputils/shared_library.hpp \
@@ -632,6 +592,19 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/parameter.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp \
+ /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_value.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_type.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp \
+ /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_type_descriptions_interface.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp \
@@ -665,48 +638,6 @@ CMakeFiles/Serial_Skili_component.dir/src/main.cpp.o: \
  /usr/include/c++/13/queue /usr/include/c++/13/bits/stl_queue.h \
  /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/simple_events_queue.hpp \
  /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/timers_manager.hpp \
- /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_client.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__builder.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp \
- /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp \
- /opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h \
- /opt/ros/jazzy/include/rcl_yaml_param_parser/rcl_yaml_param_parser/visibility_control.h \
- /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_map.hpp \
- /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_event_handler.hpp \
- /opt/ros/jazzy/include/rclcpp/rclcpp/parameter_service.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/bool.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
  /home/light/robocon2025/ROS/src/Serial_Bridge_Skeleton/include/Serial_Bridge_Skeleton/serial_class.hpp \
  /usr/include/libserial/SerialPort.h \
  /usr/include/libserial/SerialPortConstants.h /usr/include/termios.h \
